@@ -7,6 +7,9 @@ Mods are mainly:
   - padding and positioning of vomnibar list entries
   - reverting/disabling some of the vomnibar styling changes
 
+set vomnibar "sizes" config key to: 
+    "sizes": "62,28,46,0.8",
+
 Modified from vimium-snow theme:
 (c) 2020 Saïd Dermoumi
 https://github.com/dermoumi/vimium-snow
