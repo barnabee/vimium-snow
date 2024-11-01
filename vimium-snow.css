@@ -1,5 +1,13 @@
 /*
-vimium-snow theme
+Modified vimium-snow theme
+https://github.com/barnabee/vimium-snow
+
+Mods are mainly:
+  - fonts and font sizes
+  - padding and positioning of vomnibar list entries
+  - reverting/disabling some of the vomnibar styling changes
+
+Modified from vimium-snow theme:
 (c) 2020 Saïd Dermoumi
 https://github.com/dermoumi/vimium-snow
 */
@@ -98,13 +106,14 @@ https://github.com/dermoumi/vimium-snow
 /* ^ do not touch this line ^ */
 
 * {
-  font-family: "JetBrains Mono", monospace !important;
+  /*font-family: "JetBrains Mono", monospace !important;*/
 }
 
 .transparent {
   opacity: 1;
 }
 
+/* Turn off all these modifications from vimium-snow for now (TODO: selectively re-enable ones I like)
 body {
   border-radius: 14px;
   border: 3px rgba(0, 0, 0, 0.08) solid;
@@ -133,17 +142,17 @@ body:after {
 }
 
 #bar::before {
-  content: "❯";
+  content: "❯ ";
   display: inline-block;
-  width: 1rem;
+  width: 3rem;
   height: 24px;
   position: absolute;
   left: 1rem;
   z-index: 300;
-  font-size: 1rem;
+  font-size: 19rem;
   padding: 4px 0;
   line-height: 1.6em;
-  text-align: right;
+  text-align: left;
   color: rgba(0, 0, 0, 0.3);
   font-weight: bold;
 }
@@ -151,20 +160,26 @@ body:after {
 .has-dark #bar::before {
   color: #d4d4d4;
 }
+*/
 
 #input {
   border: none;
-  background: none;
   box-shadow: unset;
-  font-size: 1rem;
+  /* Also turn off these input changes…
+  background: none;
+  font-size: 20rem;
   color: #1f2731;
   padding-left: 2rem;
+  */
 }
 
+/* and these…
 .has-dark #input {
   color: #ffffff;
 }
+*/
 
+/* And leave the toolbar alone…
 #toolbar {
   top: 7px;
   right: 14px;
@@ -220,13 +235,14 @@ body:after {
 .has-dark #toolbar .button#close > svg {
   fill: #ddd8cd;
   stroke: #ddd8cd;
-}
+}*/
 
 #list {
   background: rgba(247, 246, 246, 0.99);
   border-radius: unset;
   padding: 5px;
   padding-bottom: 10px;
+  padding-top: 9px;
 }
 
 .has-dark #list {
@@ -235,12 +251,12 @@ body:after {
 
 .item {
   padding: 6px 10px;
-  padding-top: 3px;
+  padding-top: 3px; /* modified from vimium-snow, was: 3px */
   margin: 0 5px;
-  margin-top: -2px;
+  margin-top: 0px; /* modified from vimium-snow, was: -2px */
   border-radius: 6px;
   border: unset;
-  border: 3px transparent solid;
+  /*border: 3px transparent solid;*/
   height: 46px;
 }
 
@@ -258,12 +274,12 @@ body:after {
 .item.s,
 .item:hover {
   background-color: unset;
-  border: 3px rgba(0, 0, 0, 0.02) solid;
+  /*border: 3px rgba(0, 0, 0, 0.02) solid;*/
 }
 
 .has-dark .item.s,
 .has-dark .item:hover {
-  border: 3px rgba(80, 83, 84, 0.14) solid;
+  /*border: 5px rgba(80, 83, 84, 0.14) solid;*/
 }
 
 .item.s::before {
@@ -286,8 +302,8 @@ body:after {
   width: 24px;
   height: 24px;
   padding-right: unset;
-  margin-right: 10px;
-  margin-top: 5px;
+  margin-right: 5px; /* modified from vimium-snow, was: 10px */
+  margin-top: 11px; /* modified from vimium-snow, was: 5px */
   background-position: bottom right;
 }
 
@@ -315,7 +331,7 @@ body:after {
 }
 
 .item .top .title {
-  font-size: 0.85rem;
+  font-size: 13rem;
   line-height: 0.8em;
   margin-top: 2px;
 }
@@ -333,13 +349,13 @@ body:after {
 }
 
 .item .bottom {
-  margin-top: -14px;
-  padding-left: 14px;
+  margin-top: -9px; /* modified from vimium-snow, was: -14px */
+  padding-left: 9px; /* modified from vimium-snow, was: 14px */
 }
 
 .item .bottom a {
   color: #b6b8b8;
-  font-size: 0.6rem;
+  font-size: 12rem;
 }
 
 .has-dark .item .bottom a {
