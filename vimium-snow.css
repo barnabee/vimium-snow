@@ -19,7 +19,7 @@ https://github.com/dermoumi/vimium-snow
 /* ^ do not touch this line ^ */
 
 * {
-  font-family: "JetBrains Mono", monospace !important;
+  /*font-family: "JetBrains Mono", monospace !important;*/
 }
 
 /* .R,.DHM,.HM,.IHS,.IH,.BH,.MH {
@@ -245,7 +245,7 @@ body:after {
   background: rgba(247, 246, 246, 0.99);
   border-radius: unset;
   padding: 5px;
-  padding-bottom: 10px;
+  padding-bottom: 10px; /* barnabee added */
   padding-top: 9px;
 }
 
@@ -307,7 +307,7 @@ body:after {
   height: 24px;
   padding-right: unset;
   margin-right: 5px; /* modified from vimium-snow, was: 10px */
-  margin-top: 11px; /* modified from vimium-snow, was: 5px */
+  margin-top: 10px; /* modified from vimium-snow, was: 5px */
   background-position: bottom right;
 }
 
@@ -335,7 +335,7 @@ body:after {
 }
 
 .item .top .title {
-  font-size: 13rem;
+  font-size: 15rem;
   line-height: 0.8em;
   margin-top: 2px;
 }
@@ -363,7 +363,7 @@ body:after {
 }
 
 .has-dark .item .bottom a {
-  color: #4a545e;
+  color: #5a646e; /* #4a545e */
 }
 
 .item .bottom a match {
