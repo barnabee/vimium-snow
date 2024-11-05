@@ -313,7 +313,8 @@ body:after {
   padding-right: unset;
   margin-right: 5px; /* modified from vimium-snow, was: 10px */
   margin-top: 10px; /* modified from vimium-snow, was: 5px */
-  background-position: bottom right;
+  background-position: center left; /* modified from vimium-snow, was: bottom right */
+  background-image: none !important; /* barnabee addition, temporary until fix favicon */
 }
 
 .has-dark .item .icon {
